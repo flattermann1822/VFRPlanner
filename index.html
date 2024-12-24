@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFR Flugdurchführungsplan</title>
+</head>
+<body>
+    <h1>VFR-Flugdurchführungsplan</h1>
+    <form id="vfr-form">
+        <label for="start">Start (ICAO):</label>
+        <input type="text" id="start" name="start" required><br><br>
+
+        <label for="ziel">Ziel (ICAO):</label>
+        <input type="text" id="ziel" name="ziel" required><br><br>
+
+        <label for="wegpunkte">Wegpunkte:</label>
+        <input type="text" id="wegpunkte" name="wegpunkte"><br><br>
+
+        <label for="flugzeug">Flugzeug (Callsign):</label>
+        <select id="flugzeug" name="flugzeug"></select><br><br>
+
+        <label for="datum">Datum:</label>
+        <input type="date" id="datum" name="datum" required><br><br>
+
+        <label for="beladung">Beladung (kg):</label>
+        <input type="number" id="beladung" name="beladung" required><br><br>
+
+        <button type="submit">Plan erstellen</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
